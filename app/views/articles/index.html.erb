@@ -1,0 +1,44 @@
+<!-- <h1>Listing articles</h1>
+
+<table>
+  <tr>
+    <th>Headline</th>
+    <th>Body</th>
+    <th>Source</th>
+    <th>Location</th>
+    <th>Link</th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.headline %></td>
+    <td><%= article.body %></td>
+    <td><%= article.source %></td>
+    <td><%= article.location %></td>
+    <td><%= article.link %><td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br /> -->
+
+<%= link_to 'New Article', new_article_path %>
+
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <% @articles.each do |article| %>
+      <div class="item <%= 'active' if article == @articles.first %>">
+        <%= link_to article do %>
+          <%= filepicker_image_tag article.link, w: 1000, h: 1000, fit: 'clip' %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>

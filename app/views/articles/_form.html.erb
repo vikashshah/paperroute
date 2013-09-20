@@ -1,0 +1,28 @@
+<%= semantic_form_for(@article) do |f| %>
+
+  <div class="form-inputs">
+    <%= f.input :headline, :as => :rich, label: 'Headline of Article' %>
+  </div>
+
+ <div class="form-inputs">
+    <%= f.input :body, :as => :rich, label: 'Body of Article' %>
+ </div>
+
+ <div class="form-inputs">
+    <%= f.input :source, :as => :rich, label: 'Source of Article' %>
+ </div>
+
+ <div class="form-inputs">
+    <%= f.input :location, label: 'Location of Article' %>
+ </div>
+
+  <div>
+    <%= f.label :link, "Upload Your Background Picture:" %>
+    <%= f.filepicker_field :link %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+
+<% end %>
