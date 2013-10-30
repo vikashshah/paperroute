@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require jquery.carousel.fullscreen
 //= require_tree .
 //= require rich

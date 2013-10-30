@@ -4,17 +4,26 @@
     <%= f.input :headline, :as => :rich, label: 'Headline of Article' %>
   </div>
 
- <div class="form-inputs">
+  <div class="form-inputs">
     <%= f.input :body, :as => :rich, label: 'Body of Article' %>
- </div>
+  </div>
 
- <div class="form-inputs">
+  <div class="form-inputs">
     <%= f.input :source, :as => :rich, label: 'Source of Article' %>
+  </div>
+
+
+  <%#= fields_for(@location, @location.article.build) do |u| %>
+  <div class="field">
+   <%#= u.label :state %> <br />
+   <%#= u.text_field :state %>
  </div>
 
- <div class="form-inputs">
+
+
+  <div class="form-inputs">
     <%= f.input :location, label: 'Location of Article' %>
- </div>
+  </div>
 
   <div>
     <%= f.label :link, "Upload Your Background Picture:" %>

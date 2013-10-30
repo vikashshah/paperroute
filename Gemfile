@@ -4,15 +4,13 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'simple_form'
 gem 'filepicker-rails'
-gem 'bootstrap-sass', '~> 2.2.2.0'
+gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'rich'
 gem 'formtastic'
 
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -31,9 +29,15 @@ gem 'jquery-rails'
 
 
 group :development do
+	gem 'pg', '0.17.0'
 	gem 'better_errors'
 	gem 'binding_of_caller'
 
+end
+
+
+group :production do
+#	gem 'pg'
 end
 
 
