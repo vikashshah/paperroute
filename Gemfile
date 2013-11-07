@@ -8,6 +8,7 @@ gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'rich'
 gem 'formtastic'
 gem 'pg'
+gem 'kaminari'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
