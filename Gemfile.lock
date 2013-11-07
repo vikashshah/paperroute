@@ -148,7 +148,7 @@ DEPENDENCIES
   filepicker-rails
   formtastic
   jquery-rails
-  pg (= 0.17.0)
+  pg
   rails (= 3.2.13)
   rich
   sass-rails (~> 3.2.3)

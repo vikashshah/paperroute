@@ -7,7 +7,7 @@ gem 'filepicker-rails'
 gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'rich'
 gem 'formtastic'
-
+gem 'pg'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -29,7 +29,6 @@ gem 'jquery-rails'
 
 
 group :development do
-	gem 'pg', '0.17.0'
 	gem 'better_errors'
 	gem 'binding_of_caller'
 
