@@ -148,6 +148,7 @@ DEPENDENCIES
   filepicker-rails
   formtastic
   jquery-rails
+  kaminari
   pg
   rails (= 3.2.13)
   rich
